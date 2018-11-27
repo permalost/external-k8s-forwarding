@@ -1,0 +1,18 @@
+# Default values for test.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+#
+# Initially set up for dns challenge cloudflare (no access from internet on service required)
+#
+# Secret for cloudflare needed
+#     name: cloudflare-api-key-secret
+#     key: apikey.txt
+
+domain: example.com
+
+cloudflare:
+  email: your-cloudflare-email@example.com
+
+acme:
+  email: your-email@example.com
+  server: https://acme-staging-v02.api.letsencrypt.org/directory
